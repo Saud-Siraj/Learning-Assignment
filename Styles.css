@@ -1,285 +1,461 @@
 *
 {
-margin: 0px;
-padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
-div.Logos
+
+.Logos
 {
     height: 40px;
-    background-color:blue;
+    width: 100%;
+    background-color: rgb(53, 53, 243);
+    padding-left: 20px;
     padding-top: 15px;
     padding-bottom: 10px;
-    padding-left: 30px;
-    border-color: black;
-    border-radius: 4px;
-    width: auto;
+    align-items: center;
+    border: black;
+    border-radius: 2px;
+    display: flex;
+    -moz-box-flex: unset;
+
+    
 }
-span.Slogan
+.Logos button
+{height: 30px;
+ width: 90px;
+ color: white;
+ background-color: silver;
+ 
+
+}
+
+.Slogan
 {
-    text-align: center;
-    font-size: 16px;
     color: white;
-    font-style: oblique;
-    padding-left: 120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline;
+    margin-left: 150px;
     
 }
-span.Donations
+
+.Donations
 {
-    padding-left: 150px;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    display: inline;
+    justify-items: right;
+    margin-left: 150px;
+    border: white;
+    
+
+}
+.homebar
+{
+   background-color: rgb(241, 240, 240);
+   height: 100px;
+   width: 100%;
+   position: sticky;
+   border: black;
+   padding-left: 20px;
+   z-index: 1;
+   display: inline-flex;
+   
+   left:0px;
+   top: 0px;
+
+}
+
+.homebar ul
+{
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: right;
+    align-content: space-around;
+    list-style: none;
+    margin-left: 100px;
     
 }
-button
-{   align-self: flex-end;
-    height: 30px;
-    width: 90px;
-    font-size: 12px;
-}
-div.Contents
+.homebar ul li
 {
-    padding-left: 70px;
-    height: 90px;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding-top: 5px;
+    z-index: 1;
+    
+
 }
-  div.Picture
-  {
-      height: 400;
-      padding-top: 130px;
-      
-  }
-  div.marquee
-  {
-      background-color: blue;
-      height: 40px;
-      padding-bottom: 10px;
-      align-items: center;
-      color: white;
-  }
-  div.Introduction
-  {
-      height: 400px;
-      background-color: rgb(235, 235, 235);
-      border-width: 300px;
-  }
-  
-div.working
-{
-    text-align:justify;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 14px;
-padding: 10px;
-margin: 10px;
+
+.homebar ul li:hover
+{background-color: rgb(76, 76, 209);
+ border-radius: 40px 40px 40px 40px ;
+
 }
-  h1.Intro
-  {
-      color:blue;
-      text-align: center;
-      font-size: 24px;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      margin: 20px;
-  }
-  
-  .Contents
-  {
-      background-color: rgb(214, 212, 212);
-      text-align: center;
-      position: fixed;
-      height: 400px;
-      width: 1200px;
-  }
-  .Contents ul
-  {
-      display: inline-flex;
-      list-style: none;
-      color: white;
-      box-sizing: border-box;
-      
-  }
-  .Contents ul li
-  {
-   width: 20px;
-   margin: 30px;
-   padding-right: 15px;
-  }
-  .Contents ul li a
+
+.homebar ul li a
   {
       text-decoration:black;
       font-family: 'Times New Roman', Times, serif;
       font-style: italic;
       color: black;
+      border: 2px;
+      border-color: black;
   }
-  .Contents ul li:hover
-  {
-      background-color: rgb(110, 110, 238);
-      border-radius: 50px;
-      
-  }
-  .Hidden_Items
-  {
-      display: none;
-  }
-  .Contents ul li:hover .Hidden_Items
-  {
-      display: block;
-      position:absolute;
-      margin-top: 15px;
-      margin-left: 15px;
-  }
-  .Contents ul li:hover .Hidden_Items ul
-  {
-      display: block;
-      margin: 10px;
-  }
-  .Contents ul li:hover .Hidden_Items ul li
-  {
-      width: 100px;
-      background: transparent;
-      border-bottom: 2px;
-      text-align: center;
 
-  }
-  .Contents ul li:hover .Hidden_Items ul li a:hover
-  {
-      background-color: rgb(76, 76, 209);
-      width: 40px;
-      height: 50px;
-  }
-.Hidden_Items2
+.Hidden_Items
 {
     display: none;
 }
-.Contents ul li:hover .Hidden_Items ul li :hover.Hidden_Items2
+
+.homebar ul li:hover .Hidden_Items
 {
-    display: block;
-    position: relative;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-.Contents ul li:hover .Hidden_Items ul li :hover.Hidden_Items2 ul
-{
-display: block;
-margin: 10px;
-}
-.Contents ul li:hover .Hidden_Items ul li :hover.Hidden_Items2 ul li
-{width: 100px;
-    background: transparent;
-    border-bottom: 2px;
+    display:block;
+    position: absolute;
+    border-bottom: black;
+    border: black;
     text-align: center;
-
+   
 }
-.Contents ul li:hover .Hidden_Items ul li :hover.Hidden_Items2 ul li a: :hover
-{background-color: rgb(76, 76, 209);
-    width: 40px;
-    height: 50px;
 
+.homebar ul li:hover .Hidden_Items ul
+  {
+      display: block;
+      margin: 10px;
+      background-color:rgb(241, 240, 240);
+      
+
+    }
+
+
+  .homebar ul li:hover .Hidden_Items ul li
+  {height: 50px;
+    width: 120px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding-top: 5px;
+    z-index: 1;
+    
 }
-h1.subtask
-{
+
+  .homebar ul li:hover .Hidden_Items ul li a:hover
+  {
+    text-decoration:black;
     font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: black;
+  }
+.Hidden_Items2
+{display: none;
+ }
+
+ .Hidden_Items ul li:hover .Hidden_Items2 
+{  display:block;
+    position: absolute;
+    border-bottom: black;
+    border: black;
+    text-align: center;
+    margin-left: 110px;
+  
+
+} 
+
+.Hidden_Items ul li:hover .Hidden_Items2 ul li
+{
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding-top: 10px;
+    z-index: 1;
+   
+}
+.Hidden_Items ul li:hover .Hidden_Items2 ul li a
+{
+   
+    text-decoration:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: black;
 }
 
-span.subtask3
+
+.Picture
 {
-    color: rgb(3, 185, 3);
+   
+    height: 400px;
+    width: 100%;
+    margin: 0px;
 }
-div.Task
+
+.marquee
+{
+    background-color: rgb(53, 53, 243);
+    margin-top: 105px;
+    height: 20px;
+    padding-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color:white;
+    
+}
+.Introduction
+{
+    text-align: center;
+    height: 600px;
+    width: 100%;
+    background-color:rgb(250, 250, 250) ;
+    padding-top: 70px;
+    margin-top: 10px;
+
+}
+.Introduction h1
+{
+    color:rgb(2, 2, 77);
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.Introduction span
+{
+    color: rgb(1, 77, 1);
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+
+}
+.Introduction img
+{
+ padding-top: 20px;   
+}
+.Introduction p
+{
+    padding-top: 50px;
+    text-align: justify;
+    width: 80%;
+    padding-left: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+.Task
 {
     background-color: blue;
     height: 200px;
     padding-top: 10px;
     display: inline-flex;
-    width: auto;
+    width: 100%;
     
 
 }
-span.Task1
+
+.Task1
 {
     text-align: center;
     color: white;
     margin: 20px;
     padding:40px;
 }
-div.We_do
+
+.Task1 h1
 {
-    
-    background-color:silver
-    
+    font-family: 'Times New Roman', Times, serif;
+}
+.Task1 span
+{
+    color:rgb(10, 180, 10) ;
+}
+.We_do
+{background-color:rgb(233, 233, 233);
+ padding-top: 70px;
+ margin-top: 10px;
+ height: 700px;
+ width: 100%;
+}
+
+.We_do span
+{
+    color: rgb(1, 77, 1);
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 
 }
-h1.What_we
+.We_do h1
 {
-    color: blue;
+    color:rgb(2, 2, 77);
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    
+
+
 }
-span.box1
+.We_do img
 {
-    height: 50px;
-    width: 200px;
-    box-decoration-break: clone;
+    padding-top: 20px;
+    padding-left: 45%;
+    margin-right: 45%;
+
+}
+.box1
+{
+    height: 170px;
+    width: 320px;
     display: inline-flex;
-    padding: 60px;
     margin: 40px;
     background-color:white;
-    box-shadow: 5px 5px #777777;
-    text-align: center;
+    box-shadow: 5px 5px #5a5a5a;
     color: rgb(32, 32, 212);
+    justify-content: start;
+    
+    
 }
-span.box2
+.box1 img
+{padding-left: 20px;
+padding-top: 50px;
+}
+.box1 h1
+{
+    padding-top: 60px;
+    padding-left: 10px;
+}
+
+
+.Mission h1
+{
+    color: rgb(32, 32, 212);
+    font-size: 24px;
+    border-bottom: 20px;
+    padding-left: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.box2
 {
     height: 20px;
-    width: 300px;
-    box-decoration-break: clone;
+    width: 250px;
     display: inline-flex;
     padding: 20px;
     margin: 30px;
     background-color:rgb(223, 223, 223);
     border: black;
     border-radius: 2px;
-    
-
     color: rgb(32, 32, 212);
 
 }
-div.Mission
+.box2 h1
+{
+    
+        color: rgb(32, 32, 212);
+        font-size: 18px;
+        border-bottom: 20px;
+        padding-left: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.Mission
 {
     background-color:white;
-    padding: 40px;
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 400px;
+    width: 100%;
+    
 }
-h1.two
+
+.EVENTS
 {
-    font-size: 14px;
+    text-align: justify;
+    height: 400px;
+    float: right;
+    width: 40%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.miss
+{
+    width: 60%;
+    float: left;
+    height: 400px;
+}
+.EVENTS marquee
+{
+    width: 80%;
+    padding-top: 40px;
+}
+
+.EVENTS h1
+{
+    border: green;
+    border-bottom: 40cm;
+}
+
+.Images h1
+{
+    color:rgb(2, 2, 77);
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    padding-left: 40px;
+
 }
-h1.Mis
+.Images span
 {
-color: blue;
-text-align: left;
+    color: rgb(1, 77, 1);
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
 }
-div.Contacts
+.Images img
+{
+    border-bottom: rgb(1, 148, 1);
+    margin-left: 50%;
+    margin-top: 20px;
+}
+.Img img
+{justify-content: space-around;
+    margin: 10px;
+}
+
+.Contacts
 {
     height: 200px;
-    background-color:black;
+    background-color:rgb(0, 0, 24);
     color: white;
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    display: inline-flex;
+ 
 }
-address.add
-{
-    text-align: left;
-}
-p.Useful
-{
-    border-bottom: 100px;
-    border: green;
-    text-align: center;
-    padding-top: 5px;
-}
-div.EVENTS
-{
-    border-bottom: 50px;
-    border: green;
-    text-align: right;
 
+.add
+{
+    width: 40%;
+    float: left;
 }
+
+.Useful
+{
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 2px solid green;
+}
+.conta h1
+{
+    
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.conta
+{
+    align-content:left;
+    padding-left: 200px;
+   
+}
+
